@@ -1,0 +1,2 @@
+read a.txt:	acbdef
+read a.txt:	FILE DNE

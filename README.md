@@ -14,7 +14,9 @@
 ## Environment
 The Operating system that I used in creating this project is Windows 10 Pro. I wrote the code in Visual Studio Code v1.63.2. However, I compiled and ran the file_server on WSL. The distribution that I installed in WSL is Ubuntu. The executable file_server is located in the directory /home/hans/CS_140/Proj2. The text files commands.txt, read.txt, and empty.txt are also found here.
 ## NOTE
-I was only able to implement and test until level 3
+I was only able to implement and test until level 3. 
+This means that this "file server" can continously receive user request and each command spawns a worker thread that performs the said request.
+These threads work concurrently. However, I have not yet included mutex locks to take into account data races.
 ## Commands
 1. write <file path or name> <string input>
 - writes string input to desired file path or file name
